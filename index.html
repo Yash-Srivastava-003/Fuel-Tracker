@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delhi Fuel Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">Fuel Tracker</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Fuel Prices</a></li>
+        <li><a href="#">Petrol Pumps</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+      <h1>Find Petrol Pumps & Live Fuel Prices in Delhi</h1>
+      <p>Get the latest fuel prices and amenities at petrol pumps near you.</p>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <section class="search">
+        <label for="petrolPumpSelect">Select a Petrol Pump:</label>
+        <select id="petrolPumpSelect">
+          <option value="">-- Choose a Petrol Pump --</option>
+        </select>
+        <button onclick="fetchData()">Check Info</button>
+      </section>
+
+      <!-- Loader -->
+      <div id="loader" class="loader hidden"></div>
+
+      <!-- Output Section -->
+      <section id="output" class="output hidden"></section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Fuel Tracker. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
